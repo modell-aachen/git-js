@@ -1396,8 +1396,6 @@ Please switch to using Git#exec to run arbitrary functions as part of the comman
 
          spawned.on('close', result.resolve);
 
-         spawned.on('exit', result.resolve);
-
          result.promise.then(function (exitCode) {
             function done (output) {
                then.call(git, null, output);
